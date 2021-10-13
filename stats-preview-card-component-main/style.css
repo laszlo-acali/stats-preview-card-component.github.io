@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #090b1a;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body .container {
+  margin: 9% 10%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: White;
+}
+
+body .container .title {
+  border-radius: 15px 0 0 15px;
+  background-color: #1b1938;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: White;
+}
+
+body .container .title span {
+  color: #aa5cdb;
+}
+
+body .container .title h1 {
+  padding: 10% 15% 0 10%;
+}
+
+body .container .title > p {
+  font-size: 15px;
+  word-spacing: 3px;
+  line-height: 27px;
+  padding: 0 15% 0 10%;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body .container .title .statistictcontainer {
+  padding: 0 0 0 10%;
+}
+
+body .container .title .statistictcontainer .statistict {
+  display: inline-block;
+  padding-right: 10%;
+  padding-top: 10%;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body .container .title .statistictcontainer .statistict > b {
+  font-size: 20px;
+  color: White;
+}
+
+body .container .img {
+  height: 446px;
+  border-radius: 0 15px 15px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 37, 167, 0.7)), to(rgba(117, 37, 167, 0.7))), url(../images/image-header-desktop.jpg);
+  background-image: linear-gradient(rgba(117, 37, 167, 0.7), rgba(117, 37, 167, 0.7)), url(../images/image-header-desktop.jpg);
+  background-color: rgba(117, 37, 167, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 965px) {
+  body {
+    margin: 30px 0;
+  }
+  body .container {
+    margin: 0 auto;
+    width: 90%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container .title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-radius: 0 0 20px 20px;
+  }
+  body .container .title h1 {
+    padding: 5% 15% 0 10%;
+  }
+  body .container .title .statistictcontainer {
+    padding: 0 0 5% 10%;
+  }
+  body .container .img {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    text-align: center;
+  }
+  .container .statistict {
+    display: block;
+  }
+  .container .img {
+    height: 300px;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style.css.map */
